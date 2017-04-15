@@ -1,0 +1,49 @@
+/*SLIDES*/
+.carousel-inner, .container-slides {
+    height: auto;
+    max-height: 630px;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+img.slide01, img.slide02, img.slide03, img.slide04 {
+    max-width: 70%;
+}
+.slide01 {
+    width: 700px;
+    position: absolute;
+    border-right: 10px solid #FFFFFF;
+    border-bottom: 10px solid #FFFFFF;
+    z-index: 4;
+}
+.slide02 {
+    width: 700px;
+     position: relative;
+     left: 50%;
+     z-index: 1;
+}
+.slide03 {
+    width: 700px;
+     left: 50%;
+     position: absolute;
+     top: 29.7%;
+     z-index: 2;
+     border-top: 10px solid #FFFFFF;
+     margin-bottom: 0px;
+     margin-top: 8%;
+}
+.slide04 {
+    width: 700px;
+    position: relative;
+    float: left;
+    border-right: 10px solid #FFFFFF;
+    margin-bottom: 0px;
+    z-index: 3;
+}
+
+.carousel-caption, .carousel-control { z-index: 6;}
+.carousel-caption p{ font-size: 14px; font-weight: 700;}
+img.slide01 + .carousel-caption{left:0; top: 48%; width: 40%; text-align: left; padding: 8px;}
+img.slide02 + .carousel-caption{left:0; top: 80%; width: 40%; text-align: left; padding: 8px;}
+img.slide03 + .carousel-caption{left:68%; top: 75%; width: 30%; text-align: right; padding: 8px;}
+img.slide04 + .carousel-caption{left:68%; top: 0%; width: 30%; text-align: right; padding: 8px;}
