@@ -1,22 +1,20 @@
 (function() {
   'use strict';
-
   angular
     .module('FiveSportsApp')
-    .directive('topSlide', topSlide);
+    .directive('modalLogin', modalLogin);
 
   /** @ngInject */
-  function topSlide() {
+  function modalLogin() {
     var directive = {
-      templateUrl: 'app/components/top-slide/top-slide.html',
-      controller: TopSlideController,
+      templateUrl: 'app/components/modal-login/modal-login.html',
+      controller: ModalLoginController,
       controllerAs: 'vm',
       bindToController: true
     };
     return directive;
 
     /** @ngInject */
-    function TopSlideController() {}
+    function ModalLoginController() {}
   }
-
 })();

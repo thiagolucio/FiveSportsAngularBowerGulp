@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    w3IncludeHTML();
+    // w3IncludeHTML();
     $('#CarouselYoutube').carousel({
         interval: 5000
     });

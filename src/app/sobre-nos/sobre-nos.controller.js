@@ -3,8 +3,8 @@
 
   angular
     .module('FiveSportsApp')
-    .controller('MainController', MainController);
+    .controller('SobreNosController', SobreNosController);
 
   /** @ngInject */
-  function MainController() {}
+  function SobreNosController() {}
 })();

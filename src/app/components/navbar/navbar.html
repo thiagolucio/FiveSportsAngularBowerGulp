@@ -4,17 +4,17 @@
                 <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span>
                 <span class="icon-bar"></span><span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="home.html">
+            <a class="navbar-brand" ui-sref="home">
               <img src="assets/images/logo111.png" class="img-responsive" alt="Five Sports Logo Image">
             </a>
         </div>
         <div class="collapse navbar-collapse" id="fiveSportCollapseBar">
             <ul class="nav navbar-nav">
-              <li><a ng-href="#">Home</a></li>
-              <li><a ng-href="#">Agente Autorizado</a></li>
-              <li><a ng-href="#">Sobre Nós</a></li>
-              <li><a ng-href="#">Treinamento</a></li>
-              <li><a ng-href="#">Contact</a></li>
+              <li><a ng-href="home" ui-sref="home">Home</a></li>
+              <li><a ng-href="agente_autorizado" ui-sref="agente_autorizado">Agente Autorizado</a></li>
+              <li><a ng-href="sobre-nos" ui-sref="sobre-nos">Sobre Nós</a></li>
+              <li><a ng-href="treinamentos" ui-sref="treinamentos">Treinamentos</a></li>
+              <li><a ng-href="contato" ui-sref="contato">Contact</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li class="no-link-menu hidden-xs">
@@ -28,8 +28,31 @@
                     </div>
                 </li>
                 <li class="no-link-menu">
-                    <button id="modal-598688" class="btn btn-default btn-topmenu" href="#modal-Login" role="button" data-toggle="modal">Login</button>
-                    <button id="modal-598688" class="btn btn-primary btn-topmenu" href="#modal-registro" role="button" data-toggle="modal">Registrar-se</button>
+                     <button id="modal-login" class="btn btn-default btn-topmenu" ng-href="modal-login" ui-sref="modal-login" href="#modal-login" role="button" data-toggle="modal" data-target="#modal-login">Login</button>
+                    <!--<button-->
+                      <!--type="button"-->
+                      <!--class="btn btn-default btn-topmenu"-->
+                      <!--id="dialog-login"-->
+                      <!--data-target="#dialog-login"-->
+                      <!--href="#dialog-login"-->
+                      <!--ng-href="login"-->
+                      <!--ui-sref="login"-->
+                      <!--role="button"-->
+                      <!--data-toggle="modal">-->
+                      <!--Login-->
+                    <!--</button>-->
+
+
+                    <button
+                      id="modal-598688"
+                      class="btn btn-primary btn-topmenu"
+                      href="#dialog-registro"
+                      data-target="#dialog-registro"
+                      role="button"
+                      data-toggle="modal"
+                    >
+                      Registrar-se
+                    </button>
                     <!-- <button id="" class="btn btn-primary btn-topmenu" onclick="javascript:location.href='registrar.html'" role="button">Registrar</button> -->
                 </li>
             </ul>

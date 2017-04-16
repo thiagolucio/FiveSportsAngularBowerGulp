@@ -3,21 +3,20 @@
 
   angular
     .module('FiveSportsApp')
-    .directive('topNavbar', topNavbar);
+    .directive('blocoArtigos', blocoArtigos);
 
   /** @ngInject */
-  function topNavbar() {
+  function blocoArtigos() {
     var directive = {
-      templateUrl: 'app/components/navbar/navbar.html',
-      controller: NavbarController,
+      templateUrl: 'app/components/bloco-artigos/bloco-artigos.html',
+      controller: BlocoArtigosController,
       controllerAs: 'vm',
       bindToController: true
     };
 
     return directive;
-
     /** @ngInject */
-    function NavbarController() {}
+    function BlocoArtigosController() {}
   }
 
 })();

@@ -1,35 +1,34 @@
-@import url("../node_modules/animate.css/animate.min.css");
 @font-face {
-    font-family: 'Impact';
-    src: url('../assets/fonts/impact-webfont.eot');
-    src: url('../assets/fonts/impact-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../assets/fonts/impact-webfont.woff') format('woff'),
-         url('../assets/fonts/impact-webfont.ttf') format('truetype'),
-         url('../assets/fonts/impact-webfont.svg#Impact') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'Impact';
+  src: url('../assets/fonts/impact-webfont.eot');
+  src: url('../assets/fonts/impact-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../assets/fonts/impact-webfont.woff') format('woff'),
+  url('../assets/fonts/impact-webfont.ttf') format('truetype'),
+  url('../assets/fonts/impact-webfont.svg#Impact') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 .fontImpact{
-    font-family: 'Impact', Arial Black, "sans serif";
+    font-family: "Impact", Arial Black, sans serif;
     font-weight: normal;
     font-style: normal;
     }
 h1 {
-    font-family: 'Impact', Arial Black, "sans serif";
+  font-family: "Impact", Arial Black, sans serif;
 	font-style: normal;
 	font-variant: normal;
 	font-weight: 500;
 }
 h3 {
-	font-family: 'Impact', Arial Black, "sans serif";
+  font-family: "Impact", Arial Black, sans serif;
 	font-style: normal;
 	font-variant: normal;
 	font-weight: 500;
 }
 /*input {border-radius: 0px!important;}*/
 .bgD{background: #DDD;}
-.row {padding: 16px; margin: 0px;}
-.padding0 {padding: 0px!important;}
+.row {padding: 16px; margin: 0;}
+.padding0 {padding: 0!important;}
 .padding6px {padding: 6px;}
 .padding16px {padding: 16px;}
 .margin24 {margin: 24px;}
@@ -40,12 +39,13 @@ h3 {
 .margintop25 {margin-top: 25px;}
 .margin-right50p {margin-right: 15%;}
 .mtop-16 {margin-top: -16px;}
+.font14 {font-size: 14px!important; font-weight: 600;}
 .font16 {font-size: 16px; font-weight: 600;}
 .font24{font-size: 24px;}
 .color333{color: #333333;}
 .nodecoration{text-decoration: none!important;}
-.no-radius{border-radius: 0px;}
-.border-none{border: 0px;}
+.no-radius{border-radius: 0;}
+.border-none{border: 0;}
 .height100{height: 100%;}
 .text-center{text-align: center;}
 .text-justify{text-align: justify;}
@@ -57,14 +57,12 @@ fieldset {
     /*background-color: #EEEEEE;*/
     margin: 5%;
 }
-
 .iconDetalhes{cursor: pointer;}
 .iconDetalhes:hover {
     color: #CDCDCD;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
-
 .centered-horizontal {
     position: relative;
     left: 50%;
@@ -75,25 +73,22 @@ fieldset {
     -webkit-align-items: center;
 }
 .centered-absolute {
-   position: relative!;
+   position: relative;
    left: 50%;
    top: 50%;
    transform: translate(-50%,-50%);
    align-items:center;
    -webkit-align-items: center;
 }
-.iframe-centralize {
-    position: relative!important;
-    left: 50%!important;
-    -webkit-transform: translateX(-50%)!important;
-    -ms-transform: translateX(-50%)!important;
-    transform: translateX(-50%)!important;
-    align-items:center!important;
-    -webkit-align-items: center!important;
+iframe-centralize {
+  position: relative!important;
+  left: 50%!important;
+  -webkit-transform: translateX(-50%)!important;
+  -ms-transform: translateX(-50%)!important;
+  transform: translateX(-50%)!important;
+  align-items:center!important;
+  -webkit-align-items: center!important;
 }
-
-
-
 /*ICONES REDES SOCIAIS*/
 .socialIcons {
     height: 24px;
@@ -116,8 +111,8 @@ fieldset {
 /*PERSONALIZACAO DOS BOTOES*/
 .btn {
     color: #FFF!important;
-    border: 0px;
-    border-radius: 0px;
+    border: 0;
+    border-radius: 0;
     font-size: 14px;
     padding: 14px 20px;
 }
@@ -125,14 +120,12 @@ fieldset {
     -webkit-transition: all ease .5s;
     -o-transition: all ease .5s;
     -moz-transition: all ease .5s;
-    -ms-transition: all ease .5s;
     transition: all ease .5s;
 }
 .btn-default { background-color: #BBBBBB}
 .btn-default:hover {background-color: #333333;}
 .btn-primary { background-color: #137ee8}
 .btn-primary:hover {background-color: #205a7a;}
-
 .btn-topmenu {margin-top: 12px; padding: 6px 10px!important;}
 .btn-dark {background-color: #333333; color: #FFFFFF;}
 .btn-configurador {
@@ -145,14 +138,11 @@ img.img-responsive {
     max-width: 100%;
     height: auto;
 }
-
-
-
 /*CAROUSEL*/
 .carouselYoutube {margin-bottom: 0; padding: 0 40px 30px 40px;}
 .carousel-control {
     height: 100px;
-	width: 40px;
+	  width: 40px;
     line-height: 100px;
     background: #333;
     margin-top: 90px;
@@ -165,9 +155,8 @@ img.img-responsive {
     width: 200px;
     height: auto;
     background: transparent;
-    margin-top: 0px!important;
+    margin-top: 0!important;
 }
-
 .carousel-control-slide >i {
     font-size: 100px;
     font-weight: 100;
@@ -181,17 +170,13 @@ img.img-responsive {
     border: 1px solid #000000;
     position: relative;
     left: 50%;
-    border-radius: 0px;
+    border-radius: 0;
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
     align-items:center;
     -webkit-align-items: center;
 }
-
-
-
-
 .modal-header, .modal-footer {
      background-color: #757577;
     color: #FFFFFF;
@@ -199,7 +184,7 @@ img.img-responsive {
 iframe[style] {width: 100% !important;}
 
 .title-block-novidades {
-    border-radius: 0px!important;
+    border-radius: 0!important;
     color: #464542!important;
     font-weight: bold;
     font-size: 18px;

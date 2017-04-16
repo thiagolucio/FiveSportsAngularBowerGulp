@@ -3,20 +3,21 @@
 
   angular
     .module('FiveSportsApp')
-    .directive('topSlide', topSlide);
+    .directive('slideYoutube', slideYoutube);
 
   /** @ngInject */
-  function topSlide() {
+  function slideYoutube() {
     var directive = {
-      templateUrl: 'app/components/top-slide/top-slide.html',
-      controller: TopSlideController,
+      templateUrl: 'app/components/slide-youtube/slide-youtube.html',
+      controller: SlideYoutubeController,
       controllerAs: 'vm',
       bindToController: true
     };
+
     return directive;
 
     /** @ngInject */
-    function TopSlideController() {}
+    function SlideYoutubeController() {}
   }
 
 })();

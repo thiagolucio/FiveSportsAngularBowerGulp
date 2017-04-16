@@ -1,10 +1,28 @@
+
+.fontImpact{
+    font-family: 'Impact', Arial Black, "sans serif";
+    font-weight: normal;
+    font-style: normal;
+    }
+h1 {
+    font-family: 'Impact', Arial Black, "sans serif";
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+}
+h3 {
+	font-family: 'Impact', Arial Black, "sans serif";
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+}
 .navbar-inverse {
     height: 60px;
     background-color: #757577;
     padding-left: 50px;
     padding-right: 50px !important;
     box-shadow: 4px -1px 9px 1px #000000;
-    font-family: 'impactregular', Arial Black, "sans serif";
+    font-family: 'Impact', Arial Black, "sans serif";
     font-weight: normal;
     border-radius: 0px;
     border: 0px;

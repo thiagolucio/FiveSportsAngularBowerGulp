@@ -3,21 +3,20 @@
 
   angular
     .module('FiveSportsApp')
-    .directive('topNavbar', topNavbar);
+    .directive('treinamentos', treinamentos);
 
   /** @ngInject */
-  function topNavbar() {
+  function treinamentos() {
     var directive = {
-      templateUrl: 'app/components/navbar/navbar.html',
-      controller: NavbarController,
+      templateUrl: 'app/components/treinamentos/treinamentos.html',
+      controller: TreinamentosController,
       controllerAs: 'vm',
       bindToController: true
     };
 
     return directive;
-
     /** @ngInject */
-    function NavbarController() {}
+    function TreinamentosController() { }
   }
 
 })();
