@@ -10,11 +10,11 @@
         </div>
         <div class="collapse navbar-collapse" id="fiveSportCollapseBar">
             <ul class="nav navbar-nav">
-              <li><a ng-href="home" ui-sref="home">Home</a></li>
-              <li><a ng-href="agente_autorizado" ui-sref="agente_autorizado">Agente Autorizado</a></li>
-              <li><a ng-href="sobre-nos" ui-sref="sobre-nos">Sobre Nós</a></li>
-              <li><a ng-href="treinamentos" ui-sref="treinamentos">Treinamentos</a></li>
-              <li><a ng-href="contato" ui-sref="contato">Contact</a></li>
+              <li><a ui-sref="home">Home</a></li>
+              <li><a ui-sref="agente_autorizado">Agente Autorizado</a></li>
+              <li><a ui-sref="sobre_nos">Sobre Nós</a></li>
+              <li><a ui-sref="treinamentos">Treinamentos</a></li>
+              <li><a ui-sref="contato">Contact</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li class="no-link-menu hidden-xs">
@@ -28,7 +28,7 @@
                     </div>
                 </li>
                 <li class="no-link-menu">
-                     <button id="modal-login" class="btn btn-default btn-topmenu" ng-href="modal-login" ui-sref="modal-login" href="#modal-login" role="button" data-toggle="modal" data-target="#modal-login">Login</button>
+                     <button id="button-login" class="btn btn-default btn-topmenu" href="#modal-login" role="button" data-toggle="modal" data-target="#modal-login">Login</button>
                     <!--<button-->
                       <!--type="button"-->
                       <!--class="btn btn-default btn-topmenu"-->
@@ -58,3 +58,4 @@
             </ul>
         </div>
     </nav>
+   <div ng-include="'app/dialog-login/login.html'" ng-controller="DialogLoginController as vm"></div>

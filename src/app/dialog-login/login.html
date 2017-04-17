@@ -1,5 +1,5 @@
 <!-- MODAL DE LOGIN -->
-<div class="modal fade margintop10p" id="dialog-login" role="dialog" aria-labelledby="Modal de Login" aria-hidden="true">
+<div class="modal fade margintop10p" id="modal-login" role="dialog" aria-labelledby="Modal de Login" aria-hidden="true">
   <div class="modal-dialog no-border">
     <div class="modal-content bgD no-radius">
       <div class="modal-header">
@@ -13,24 +13,19 @@
           <form role="form">
             <div class="input-group input-group-lg">
               <span class="input-group-addon" id="loginUser"><i class="fa fa-user-circle-o"></i></span>
-              <input type="text" class="form-control" placeholder="Usuário" aria-describedby="loginUser">
+              <input type="text" class="form-control" ng-model="vm.user.username" placeholder="Usuário" aria-describedby="loginUser">
             </div>
             <br>
             <div class="input-group input-group-lg">
               <span class="input-group-addon" id="loginUser"><i class="glyphicon glyphicon-lock"></i></span>
-              <input type="password" class="form-control" placeholder="Senha" aria-describedby="Password">
+              <input type="password" class="form-control" ng-model="vm.user.password" placeholder="Senha" aria-describedby="Password">
             </div>
-            <!--<div class="checkbox pull-left font16">
-                <label>
-                    <input type="checkbox" /> <i class="glyphicon glyphicon-exclamation-sign"></i> Esqueci minha senha.
-                </label>
-            </div>-->
           </form>
         </fieldset>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal"> Esqueci minha senha?</button>
-        <button type="button" class="btn btn-primary btn-lg"><i class="glyphicon glyphicon-log-in"></i>  Login</button>
+        <button type="button" class="btn btn-primary btn-lg" ng-click="vm.login(vm.user)"><i class="glyphicon glyphicon-log-in"></i>  Login</button>
       </div>
     </div>
   </div>

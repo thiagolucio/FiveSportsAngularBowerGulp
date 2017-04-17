@@ -16,7 +16,15 @@
 
     return directive;
     /** @ngInject */
-    function BlocoArtigosController() {}
+    function BlocoArtigosController() {
+      var vm = this;
+      vm.artigos = [
+        {'img':'assets/images/postsBloco/imgPost01.jpg', 'titulo':'Título Curto do Bloco.', 'texto':'aaaaaaaaaaaaaaaaaaa'},
+        {'img':'assets/images/postsBloco/imgPost02.jpg', 'titulo':'Título Curto do Bloco.', 'texto':'bbbbbbbbbbbbbb'},
+        {'img':'assets/images/postsBloco/imgPost03.jpg', 'titulo':'Título Curto do Bloco.', 'texto':'bbbbbbbbbbbbbb'},
+        {'img':'assets/images/postsBloco/imgPost04.jpg', 'titulo':'Título Curto do Bloco.', 'texto':'bbbbbbbbbbbbbb'}
+        ];
+    }
   }
 
 })();

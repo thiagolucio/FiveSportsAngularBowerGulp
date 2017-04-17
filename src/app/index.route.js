@@ -20,7 +20,7 @@
         controller: 'AutorizadoController',
         controllerAs: 'vm'
       })
-      .state('sobre-nos', {
+      .state('sobre_nos', {
         url: '/sobre-nos',
         templateUrl: 'app/sobre-nos/sobre-nos.html',
         controller: 'SobreNosController',
@@ -36,12 +36,6 @@
         url: '/contato',
         templateUrl: 'app/contato/contato.html',
         controller: 'ContatoController',
-        controllerAs: 'vm'
-      })
-      .state('dialog_login', {
-        url: '/login',
-        templateUrl: 'app/dialog-login/login.html',
-        controller: 'DialogLoginController',
         controllerAs: 'vm'
       });
 
