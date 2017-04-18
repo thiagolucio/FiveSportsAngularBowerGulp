@@ -6,6 +6,25 @@
 - `$ gulp protractor` to launch your e2e tests with Protractor
 - `$ gulp protractor:dist` to launch your e2e tests with Protractor on the dist files
 
+
+
+
+Forma de declarar o Resource (exemplo ):
+
+    export class Newitem {
+
+        constructor($nxResource, ServicesRegister, API_URL) {
+
+            return $resource(API_URL.concat('/artigos'));
+            
+            ServicesRegister.cardService.addResource('group', 'groups');
+            return $nxResource(ServicesRegister.cardService.group.getFullPath(), false);
+        }
+    }
+
+
+
+
 # AngularUI Router &nbsp;[![Build Status](https://travis-ci.org/angular-ui/ui-router.svg?branch=master)](https://travis-ci.org/angular-ui/ui-router)
 
 #### The de-facto solution to flexible routing with nested views
