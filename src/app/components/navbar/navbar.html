@@ -28,29 +28,11 @@
                     </div>
                 </li>
                 <li class="no-link-menu">
-                     <button id="button-login" class="btn btn-default btn-topmenu" href="#modal-login" role="button" data-toggle="modal" data-target="#modal-login">Login</button>
-                    <!--<button-->
-                      <!--type="button"-->
-                      <!--class="btn btn-default btn-topmenu"-->
-                      <!--id="dialog-login"-->
-                      <!--data-target="#dialog-login"-->
-                      <!--href="#dialog-login"-->
-                      <!--ng-href="login"-->
-                      <!--ui-sref="login"-->
-                      <!--role="button"-->
-                      <!--data-toggle="modal">-->
-                      <!--Login-->
-                    <!--</button>-->
-
-
-                    <button
-                      id="modal-598688"
-                      class="btn btn-primary btn-topmenu"
-                      href="#dialog-registro"
-                      data-target="#dialog-registro"
-                      role="button"
-                      data-toggle="modal"
-                    >
+                     <button id="button-login" class="btn btn-default btn-topmenu" href="#modal-login" role="button" data-toggle="modal" data-target="#modal-login">
+                      Login
+                    </button>
+                    <button id="button-register" class="btn btn-primary btn-topmenu" href="#dialog-registro" data-target="#dialog-registro"
+                      role="button" data-toggle="modal">
                       Registrar-se
                     </button>
                     <!-- <button id="" class="btn btn-primary btn-topmenu" onclick="javascript:location.href='registrar.html'" role="button">Registrar</button> -->
@@ -59,3 +41,4 @@
         </div>
     </nav>
    <div ng-include="'app/dialog-login/login.html'" ng-controller="DialogLoginController as vm"></div>
+   <div ng-include="'app/dialog-register/register.html'" ng-controller="DialogRegisterController as vm"></div>

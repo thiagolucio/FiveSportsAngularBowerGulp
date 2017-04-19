@@ -1,0 +1,78 @@
+<div class="modal fade" id="dialog-registro" role="dialog" aria-labelledby="Modal de Registro" aria-hidden="true">
+    <div class="modal-dialog no-border">
+        <div class="modal-content bgD no-radius">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times-circle fa-lg"></i></button>
+                <h4 class="modal-title" id="myModalLabel"><i class="fa fa-address-card"></i> Registre-se</h4>
+            </div>
+            <div class="modal-body bgD">
+                    <img src="assets/images/logo111.png" width="80" height="auto" class="centered-horizontal hidden-xs marginAll10"/>
+                    <form class="form-horizontal">
+                      <fieldset>
+                        <div class="col-md-1"></div>
+                        <div class="col-md-10">
+                            <div class="form-group">
+                                <label for="inputName" class="control-label">Nome</label>
+                                <input type="text" class="form-control" ng-model="vm.name.nome" id="nome" name="nome" placeholder="Digite seu Nome">
+
+                                <label for="inputSobreNome" class="control-label">Sobrenome</label>
+                                <input type="text" class="form-control" id="sobreNome" ng-model="vm.surname" placeholder="Digite Sobrenome">
+
+                                <label for="inputNascimento" class="control-label">Data de Nascimento</label>
+                                <div class="input-group date" data-provide="datepicker">
+                                    <input type="text" id="event_date" class="form-control" name="dataNascimento" placeholder="Selecione Data de Nascimento" value="">
+                                    <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                </div>
+
+                                <label for="inputEmail" class="control-label">Email</label>
+                                <input type="text" class="form-control" ng-model="vm.email" id="inputEmail" placeholder="Digite seu Email">
+                            </div>
+                            <!-- SEXO
+                            <div class="form-group">
+                              <label class="control-label">Sexo:</label>
+                                <div class="radio">
+                                  <label><input type="radio" name="optionsRadios" id="masculino" value="Masculino" checked="">  Masculino</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="optionsRadios" id="feminino" value="Feminino"> Feminino</label>
+                                </div>
+                            </div>  -->
+                            <!-- SELECIONAR ESTADOS E CIDADES
+                            <div class="form-group">
+                                  <label for="select" class="control-label">Selecione o Estado:</label>
+                                    <select id="estado" class="form-control"></select>
+                                    <br>
+                                    <label for="select" class="control-label">Selecione a Cidade:</label>
+                                    <select  id="cidade" class="form-control"></select>
+                            </div> -->
+                            <!-- SENHAS -->
+                            <div class="form-group">
+                                <h4> Dados de Usuário</h4>
+                                <!-- NOME USUARIO -->
+                                <label for="inputUserName" class="control-label">Nome de Usuário</label>
+                                <input type="text" class="form-control" id="UserName" placeholder="Digite seu Nome de Usuário">
+
+                                <label for="inputPassword" class="control-label">Digite sua Senha:</label>
+                                <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+
+                                <label for="inputPassword" class="control-label">Confirmar Senha:</label>
+                                <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+
+                                <div class="checkbox">
+                                  <label>
+                                    <input type="checkbox"> Entendo os termos de Uso.
+                                  </label>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-1"></div>
+                      </fieldset>
+                    </form>
+            </div>
+            <div class="modal-footer">
+                <button type="submit" ng-click="vm.register(vm.name)" class="btn btn-primary btn-lg"><i class="glyphicon glyphicon-check"></i>  Registrar</button>
+            </div>
+        </div>
+    </div>
+</div>
