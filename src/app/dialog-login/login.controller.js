@@ -8,7 +8,7 @@
   /** @ngInject */
   function DialogLoginController() {
     var vm = this;
-    
+
 
     vm.user = {};
     vm.login = login;

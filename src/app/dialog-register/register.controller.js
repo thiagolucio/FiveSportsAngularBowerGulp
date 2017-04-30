@@ -7,14 +7,14 @@
 
   /** @ngInject */
   function DialogRegisterController() {
+
     var vm = this;
+    vm.user = {};
 
-
-    vm.name = {};
     vm.register = register;
 
-    function register(name) {
-      console.log('register', name );
+    function register(user) {
+      console.log('register', user);
     }
 
 

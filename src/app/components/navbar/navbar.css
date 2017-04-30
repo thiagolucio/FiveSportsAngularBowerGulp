@@ -104,6 +104,13 @@ h3 {
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
+#button-login, #button-register {
+    font-family: 'Arial', "sans serif";
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    padding: 10px 18px;
+}
 @media (max-width: 767px) {
   .navbar-collapse {
     background: #757577!important;
