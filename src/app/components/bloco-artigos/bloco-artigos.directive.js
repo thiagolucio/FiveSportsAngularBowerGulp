@@ -17,14 +17,30 @@
     return directive;
     /** @ngInject */
     function BlocoArtigosController() {
-      var vm = this;
-      vm.artigos = [
-        {'img':'assets/images/postsBloco/imgPost01.jpg', 'titulo':'Título Curto do Bloco.', 'texto':'aaaaaaaaaaaaaaaaaaa'},
-        {'img':'assets/images/postsBloco/imgPost02.jpg', 'titulo':'Título Curto do Bloco.', 'texto':'bbbbbbbbbbbbbb'},
-        {'img':'assets/images/postsBloco/imgPost03.jpg', 'titulo':'Título Curto do Bloco.', 'texto':'bbbbbbbbbbbbbb'},
-        {'img':'assets/images/postsBloco/imgPost04.jpg', 'titulo':'Título Curto do Bloco.', 'texto':'bbbbbbbbbbbbbb'}
+        var vm = this;
+
+        vm.artigos = [
+          {
+            'img':'assets/images/postsBloco/imgPost01.jpg',
+            'titulo':'Título Curto do Bloco.',
+            'texto':'Texto inserido para o bloco numero Um dos textos'
+          },
+          {
+            'img':'assets/images/postsBloco/imgPost02.jpg',
+            'titulo':'Título Curto do Bloco.',
+            'texto':'Texto inserido para o bloco numero Dois dos textos'
+          },
+          {
+            'img':'assets/images/postsBloco/imgPost03.jpg',
+            'titulo':'Título Curto do Bloco.',
+            'texto':'Texto inserido para o bloco numero Três dos textos'
+          },
+          {
+            'img':'assets/images/postsBloco/imgPost04.jpg',
+            'titulo':'Título Curto do Bloco.',
+            'texto':'Texto inserido para o bloco numero Quatro dos textos'
+          }
         ];
     }
   }
-
 })();

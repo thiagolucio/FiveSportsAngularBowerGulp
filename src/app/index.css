@@ -223,6 +223,12 @@ iframe[style] {width: 100% !important;}
 .post-img-content img {
     margin: 6px;
 }
+
+
+
+/*Slides*/
+
+
 @media (max-width: 767px) {
     .min-height {min-height: 50px;}
 }

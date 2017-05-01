@@ -16,7 +16,32 @@
     return directive;
 
     /** @ngInject */
-    function TopSlideController() {}
+    function TopSlideController() {
+        var vm = this;
+
+        vm.topSlides = [
+            {
+                'img':'assets/images/slides/slide1.png',
+                'titleSlide':'First Thumbnail label',
+                'textSlide':'Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.'
+            },
+            {
+                'img':'assets/images/slides/slide2.png',
+                'titleSlide':'Second Thumbnail label',
+                'textSlide':'Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.'
+            },
+            {
+                'img':'assets/images/slides/slide3.png',
+                'titleSlide':'Third Thumbnail label',
+                'textSlide':'Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.'
+            },
+            {
+                'img':'assets/images/slides/slide4.png',
+                'titleSlide':'Four Thumbnail label',
+                'textSlide':'Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.'
+            }
+        ];
+    }
   }
 
 })();

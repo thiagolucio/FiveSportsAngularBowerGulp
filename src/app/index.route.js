@@ -37,7 +37,7 @@
         templateUrl: 'app/contato/contato.html',
         controller: 'ContatoController',
         controllerAs: 'vm'
-      });
+     });
 
     $urlRouterProvider.otherwise('/');
   }
