@@ -1,8 +1,7 @@
-{{vm.artigos}}
 <div class="row">
   <div class="col-md-12">
     <div class="row">
-        <div class="col-md-3" ng-repeat="artigo in vm.artigos">
+        <div class="col-md-3" ng-repeat="artigo in artigos">
             <img class="img-responsive" alt="Bootstrap Image Preview" ng-src="{{artigo.img}}"/>
             <h4 class="fontImpact">{{artigo.titulo}}</h4>
             <p>{{artigo.texto}}</p>

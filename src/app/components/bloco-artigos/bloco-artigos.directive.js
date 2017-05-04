@@ -8,18 +8,10 @@
   /** @ngInject */
   function blocoArtigos() {
     var directive = {
+      restrict: 'EA',
       templateUrl: 'app/components/bloco-artigos/bloco-artigos.html',
-      controller: BlocoArtigosController,
-      controllerAs: 'vm',
-      bindToController: true
-    };
-
-    return directive;
-    /** @ngInject */
-    function BlocoArtigosController() {
-        var vm = this;
-
-        vm.artigos = [
+      link: function (scope) { 
+          scope.artigos = [
           {
             'img':'assets/images/postsBloco/imgPost01.jpg',
             'titulo':'Título Curto do Bloco.',
@@ -41,6 +33,10 @@
             'texto':'Texto inserido para o bloco numero Quatro dos textos'
           }
         ];
-    }
+      }
+    };
+
+    return directive;
   }
+
 })();

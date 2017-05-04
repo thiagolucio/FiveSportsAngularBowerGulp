@@ -6,7 +6,7 @@
     .controller('DialogLoginController', DialogLoginController);
 
   /** @ngInject */
-  function DialogLoginController() {
+  function DialogLoginController($log) {
     var vm = this;
 
 
@@ -14,7 +14,7 @@
     vm.login = login;
 
     function login(user) {
-      console.log('login', user );
+      $log.log('login', user );
     }
 
   }

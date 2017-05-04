@@ -6,7 +6,7 @@
     .controller('DialogRegisterController', DialogRegisterController);
 
   /** @ngInject */
-  function DialogRegisterController() {
+  function DialogRegisterController($log) {
 
     var vm = this;
     vm.user = {};
@@ -14,7 +14,7 @@
     vm.register = register;
 
     function register(user) {
-      console.log('register', user);
+      $log.log('register', user);
     }
 
 
