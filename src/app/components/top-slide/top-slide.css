@@ -41,6 +41,35 @@ img.slide01, img.slide02, img.slide03, img.slide04 {
     z-index: 3;
 }
 
+/*CAROUSEL*/
+.carouselYoutube {margin-bottom: 0; padding: 0 40px 30px 40px;}
+.carousel-control {
+    height: 100px;
+	  width: 40px;
+    line-height: 100px;
+    background: #333;
+    margin-top: 90px;
+    z-index: 6;
+}
+.carousel-control.right{font-size: 50px; right: -38px; background-image: none;}
+.carousel-control.left {font-size: 50px; left: -38px; background-image: none;}
+.carousel-control-slide {
+    position: absolute;
+    width: 200px;
+    height: auto;
+    background: transparent;
+    margin-top: 0!important;
+}
+.carousel-control-slide >i {
+    font-size: 100px;
+    font-weight: 100;
+    margin-top: 230px;
+}
+.carousel-control-slide >i:hover {color: #2693FF;}
+.carousel-control-slide.carousel-control.right {top: 15px;}
+
+
+
 .carousel-caption, .carousel-control { z-index: 6;}
 .carousel-caption p{ font-size: 14px; font-weight: 700;}
 img.slide01 + .carousel-caption{left:0; top: 48%; width: 40%; text-align: left; padding: 8px;}

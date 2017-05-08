@@ -16,8 +16,5 @@
     function register(user) {
       $log.log('register', user);
     }
-
-
-
   }
 })();

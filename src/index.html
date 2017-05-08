@@ -24,10 +24,22 @@
   <link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicon-96x96.png">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+
+  <script type="text/javascript" src="/bower_components/jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="assets/js/cidades-estados-1.2-utf8.js"></script>
+  <script type="text/javascript" src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="assets/js/scripts.js"></script>
+  <script type="text/javascript" src="assets/js/w3data.js"></script>
+  <script type="text/javascript" src="/bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+  <script type="text/javascript" src="/bower_components/bootstrap-datepicker/js/locales/bootstrap-datepicker.pt-BR.js"></script>
+
   <link rel="manifest" href="assets/images/manifest.json">
   <link rel="stylesheet" type="text/css" href="/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker3.min.css">
   <link rel="stylesheet" type="text/css" href="/bower_components/font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+
+
+
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
   <!-- build:css({.tmp/serve,src}) styles/vendor.css -->
   <!-- bower:css -->
@@ -54,18 +66,35 @@
   <!--build:js({.tmp/serve,.tmp/partials,src}) scripts/app.js-->
   <!-- inject:js -->
   <!-- js files will be automatically insert here -->
-  <script type="text/javascript" src="assets/js/cidades-estados-1.2-utf8.js"></script>
-  <script type="text/javascript" src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="assets/js/scripts.js"></script>
-  <script type="text/javascript" src="assets/js/w3data.js"></script>
-  <script type="text/javascript" src="/bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
-  <script type="text/javascript" src="/bower_components/bootstrap-datepicker/js/locales/bootstrap-datepicker.pt-BR.js"></script>
-  <script type="text/javascript" src="/bower_components/jquery/dist/jquery.min.js"></script>
   <!-- endinject -->
   <!-- inject:partials -->
   <!-- angular templates will be automatically converted in js and inserted here -->
   <!-- endinject -->
   <!-- endbuild -->
+  <script type="text/javascript">
+      $(document).ready(function() {
+          // w3IncludeHTML();
+          $('#CarouselYoutube').carousel({
+              interval: 5000
+          });
+          $('#carousel-slide').carousel({
+              interval:5000
+          });
+          //DATEPICKER
+          $('#event_date').datepicker({
+              format: 'dd/mm/yyyy',
+              language: 'pt-BR',
+              weekStart: 0,
+              startDate:'0d',
+              todayHighlight: true
+          });
+          //CIDADES E ESTADOS
+          new dgCidadesEstados({
+            cidade: document.getElementById('cidade'),
+            estado: document.getElementById('estado'),
+            change: true
+        });
+      });
+  </script>
 </body>
-
 </html>

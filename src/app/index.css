@@ -138,33 +138,6 @@ img.img-responsive {
     max-width: 100%;
     height: auto;
 }
-/*CAROUSEL*/
-.carouselYoutube {margin-bottom: 0; padding: 0 40px 30px 40px;}
-.carousel-control {
-    height: 100px;
-	  width: 40px;
-    line-height: 100px;
-    background: #333;
-    margin-top: 90px;
-    z-index: 6;
-}
-.carousel-control.right{font-size: 50px; right: -38px;}
-.carousel-control.left {font-size: 50px; left: -38px;}
-.carousel-control-slide {
-    position: absolute;
-    width: 200px;
-    height: auto;
-    background: transparent;
-    margin-top: 0!important;
-}
-.carousel-control-slide >i {
-    font-size: 100px;
-    font-weight: 100;
-    margin-top: 230px;
-}
-.carousel-control-slide >i:hover {color: #2693FF;}
-.carousel-control-slide.carousel-control.right {top: 15px;}
-
 .thumbnail-youtube {
     background: #000000;
     border: 1px solid #000000;
@@ -223,11 +196,6 @@ iframe[style] {width: 100% !important;}
 .post-img-content img {
     margin: 6px;
 }
-
-
-
-/*Slides*/
-
 
 @media (max-width: 767px) {
     .min-height {min-height: 50px;}

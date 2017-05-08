@@ -15,6 +15,7 @@
 
     function login(user) {
       $log.log('login', user );
+    //   console.log('login',user);
     }
 
   }

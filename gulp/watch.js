@@ -14,7 +14,17 @@ gulp.task('watch', ['inject'], function () {
 
   gulp.watch([path.join(conf.paths.src, '/*.html'), 'bower.json'], ['inject-reload']);
 
+// injection do css dentro da raiz app
   gulp.watch(path.join(conf.paths.src, '/app/**/*.css'), function(event) {
+    if(isOnlyChange(event)) {
+      browserSync.reload(event.path);
+    } else {
+      gulp.start('inject-reload');
+    }
+  });
+
+//injection dentro das pastas engavetadas dos componentes
+  gulp.watch(path.join(conf.paths.src, '/app/**/**/**/*.css'), function(event) {
     if(isOnlyChange(event)) {
       browserSync.reload(event.path);
     } else {

@@ -6,33 +6,33 @@
         <h2 class="padding16px">Formulário de Contato <small> - Por favor, preencha os campos.</small></h2>
         <div class="input-group input-group-lg margintop15p">
           <span class="input-group-addon" id="nome"><i class="glyphicon glyphicon-user"></i></span>
-          <input type="text" class="form-control font14" placeholder="Digite seu nome" aria-describedby="Nome" required="true">
+          <input type="text" class="form-control font14" ng-model="vm.contato.nome" placeholder="Digite seu nome" aria-describedby="Nome" required="true">
         </div>
         <div class="input-group input-group-lg margintop15p">
           <span class="input-group-addon" id="nomeUsuario"><i class="fa fa-address-card-o"></i></span>
-          <input type="text" class="form-control font14" placeholder="Nome de usuário" aria-describedby="Nome de Usuario" required="true">
+          <input type="text" class="form-control font14" ng-model="vm.contato.userName" placeholder="Nome de usuário" aria-describedby="Nome de Usuario" required="true">
         </div>
         <div class="input-group input-group-lg margintop15p">
           <span class="input-group-addon" id="userEmail"><i class="fa fa-envelope"></i></span>
-          <input type="email" class="form-control font14" placeholder="email" aria-describedby="email" required="true">
+          <input type="email" class="form-control font14" ng-model="vm.contato.mail" placeholder="email" aria-describedby="email" required="true">
         </div>
         <div class="form-group form-group-lg" style="margin: 15px 2px;">
             <label for="mensagem" id="assunto"><b class="font14">Assunto</b></label>
-            <input type="text" id="assunto" class="form-control font14" aria-describedby="Assunto">
+            <input type="text" id="assunto" class="form-control font14" ng-model="vm.contato.assunto" aria-describedby="Assunto">
         </div>
         <div class="input-group">
           <label for="mensagem" id="mensagem"><b class="font14">Mensagem</b></label>
-          <textarea class="form-control font14" cols="100" rows="5" id="mensagem" aria-describedby="Mensagem"></textarea>
+          <textarea class="form-control font14" cols="100" rows="5" id="mensagem" ng-model="vm.contato.mensagem" aria-describedby="Mensagem"></textarea>
         </div>
-        <div class="checkbox">
+        <!-- <div class="checkbox">
             <label>
-                <input type="checkbox" name="copiaEmail"> Receber cópia por email.
+                <input type="checkbox" name="copiaEmail" ng-model="vm.checkboxModel.nome"> Receber cópia por email.
             </label>
-        </div>
+        </div> -->
         <div class="form-group pull-right">
           <div class="row">
-            <button type="reset" class="btn btn-default btn-lg"><i class="glyphicon glyphicon-remove-sign fa-lg"></i> Cancelar</button>
-            <button type="submit" class="btn btn-primary btn-lg"><i class="glyphicon glyphicon-send fa-lg"></i> Enviar</button>
+            <!-- <button type="reset" class="btn btn-default btn-lg"><i class="glyphicon glyphicon-remove-sign fa-lg"></i> Cancelar</button> -->
+            <button type="submit" class="btn btn-primary btn-lg" ng-click="vm.formContato(vm.contato)"><i class="glyphicon glyphicon-send fa-lg"></i> Enviar</button>
           </div>
         </div>
       </fieldset>

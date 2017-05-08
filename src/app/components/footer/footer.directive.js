@@ -15,6 +15,16 @@
     return directive;
 
     /** @ngInject */
-    function NavbarFooterController() {}
+    function NavbarFooterController($log) {
+        var vm = this;
+
+        vm.userNews = {};
+        vm.newsletter = newsletter;
+
+        function newsletter(userNews) {
+            $log.log('newsletter', userNews);
+            // console.log('newsletter', userNews);
+        }
+    }
   }
 })();
