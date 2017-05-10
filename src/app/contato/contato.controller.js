@@ -12,8 +12,7 @@
     //   vm.checkboxModel = {value : true};
       vm.formContato = formContato;
       function formContato(contato) {
-        // $log.log('fornContato', contato);
-        console.log('fornContato', contato);
+        $log.log('fornContato', contato);
       }
   }
 })();

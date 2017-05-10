@@ -33,6 +33,7 @@
   <script type="text/javascript" src="/bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
   <script type="text/javascript" src="/bower_components/bootstrap-datepicker/js/locales/bootstrap-datepicker.pt-BR.js"></script>
 
+
   <link rel="manifest" href="assets/images/manifest.json">
   <link rel="stylesheet" type="text/css" href="/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker3.min.css">
   <link rel="stylesheet" type="text/css" href="/bower_components/font-awesome/css/font-awesome.min.css">
@@ -71,30 +72,6 @@
   <!-- angular templates will be automatically converted in js and inserted here -->
   <!-- endinject -->
   <!-- endbuild -->
-  <script type="text/javascript">
-      $(document).ready(function() {
-          // w3IncludeHTML();
-          $('#CarouselYoutube').carousel({
-              interval: 5000
-          });
-          $('#carousel-slide').carousel({
-              interval:5000
-          });
-          //DATEPICKER
-          $('#event_date').datepicker({
-              format: 'dd/mm/yyyy',
-              language: 'pt-BR',
-              weekStart: 0,
-              startDate:'0d',
-              todayHighlight: true
-          });
-          //CIDADES E ESTADOS
-          new dgCidadesEstados({
-            cidade: document.getElementById('cidade'),
-            estado: document.getElementById('estado'),
-            change: true
-        });
-      });
-  </script>
+
 </body>
 </html>

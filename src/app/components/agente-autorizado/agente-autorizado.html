@@ -10,23 +10,11 @@
     </tr>
     </thead>
     <tbody>
-    <tr>
-      <td>Nome Autorizada</td>
-      <td class="hidden-xs">Rua da Revenda, Bairro revenda, número</td>
-      <td class="hidden-xs">(XXX)-XXXX-XXXX</td>
-      <td class="hidden-xs"><a href="mailto:emailrevenda@revenda.com.br">emailrevenda@revenda.com.br</a></td>
-    </tr>
-    <tr>
-      <td>Nome Autorizada</td>
-      <td class="hidden-xs">Rua da Revenda, Bairro revenda, número</td>
-      <td class="hidden-xs">(XXX)-XXXX-XXXX</td>
-      <td class="hidden-xs"><a href="mailto:emailrevenda@revenda.com.br">emailrevenda@revenda.com.br</a></td>
-    </tr>
-    <tr>
-      <td>Nome Autorizada</td>
-      <td class="hidden-xs">Rua da Revenda, Bairro revenda, número</td>
-      <td class="hidden-xs">(XXX)-XXXX-XXXX</td>
-      <td class="hidden-xs"><a href="mailto:emailrevenda@revenda.com.br">emailrevenda@revenda.com.br</a></td>
+    <tr ng-repeat="autorizado in vm.listaAgenteAutorizado">
+      <td>{{autorizado.parDescricao}}</td>
+      <td class="hidden-xs">{{autorizado.paeLogradouro}}</td>
+      <td class="hidden-xs">{{autorizado.pafNumero}}</td>
+      <td class="hidden-xs"><a href="{{autorizado.paeDescricao}}">{{autorizado.paeDescricao}}</a></td>
     </tr>
     </tbody>
   </table>
